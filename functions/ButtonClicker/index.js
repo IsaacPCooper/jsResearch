@@ -6,9 +6,11 @@ let clicks = 0;
 // Function to add clicks
 function addClick() {
     clicks++;
-    clickElement.innerText = clicks
+    clickElement.textContent = clicks;
 }
 
+// Function to save score, and add to DOM
 function saveScore(){
-    saveScoreElement.innerText += " - " + clicks;
+    var scoreStr = clicks + " - ";
+    saveScoreElement.textContent += scoreStr;
 }
