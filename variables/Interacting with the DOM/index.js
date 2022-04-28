@@ -4,6 +4,7 @@ var myName = "Isaac";
 var greetingMessage = "Welcome to the site, ";
 
 var welcomingMessage = greetingMessage + myName;
+welcomingMessage += "👋";
 
 function welcomeMe(){
     welcomeElement.innerText = welcomingMessage;
