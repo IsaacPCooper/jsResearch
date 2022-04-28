@@ -1,4 +1,5 @@
 // define variables
+let saveScoreElement = document.getElementById("saved-score");
 let clickElement = document.getElementById("clicked-number");
 let clicks = 0;
 
@@ -9,5 +10,5 @@ function addClick() {
 }
 
 function saveScore(){
-    console.log(clicks);
+    saveScoreElement.innerText += " - " + clicks;
 }
