@@ -5,22 +5,25 @@ let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
+let messageEl = document.getElementById("message-el");
 
-// if condition
-if (sum <= 20) {
-   message = "Draw a card?"
-} 
-else if (sum === 21) {
-    hasBlackJack = true;
-    message = "You got a BlackJack!"
-} 
-else {
-    message = "You're out!"
-    isAlive = false;
-}
+
 
 function startGame(){
-    
+// if condition
+if (sum <= 20) {
+    message = "Draw a card?"
+ } 
+ else if (sum === 21) {
+     hasBlackJack = true;
+     message = "You got a BlackJack!"
+ } 
+ else {
+     message = "You're out!"
+     isAlive = false;
+ }
+ messageEl.textContent = message;
+ console.log(message);
+
 }
 
-console.log(message);

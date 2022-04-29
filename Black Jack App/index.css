@@ -11,4 +11,7 @@ button{
     background-color: goldenrod;
     color: white;
     padding: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
 }
