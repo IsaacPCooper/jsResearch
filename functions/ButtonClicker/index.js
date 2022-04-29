@@ -11,6 +11,10 @@ function addClick() {
 
 // Function to save score, and add to DOM
 function saveScore(){
-    var scoreStr = clicks + " - ";
+    let scoreStr = clicks + " - ";
     saveScoreElement.textContent += scoreStr;
+
+    // Reset Clicks, and click Elements to 0.
+    clickElement.textContent = 0;
+    clicks = 0;
 }
