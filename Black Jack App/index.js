@@ -33,6 +33,11 @@ if (sum <= 20) {
 }
 
 function newCard(){
+    let card = 2;
+
+    sum += card;
+
+    startGame();
     console.log("Drawing a New card from the deck....")
 }
 
