@@ -10,7 +10,9 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 
-
+function getRandomCard() {
+    return 5;
+}
 
 function startGame() {
     renderGame();
@@ -48,7 +50,5 @@ function newCard(){
     console.log("Drawing a New card from the deck....")
 }
 
-function getRandomCard() {
-    
-}
+
 
