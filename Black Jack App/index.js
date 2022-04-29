@@ -1,6 +1,6 @@
 // Variables for two cards
-let firstCard = 2;
-let secondCard = 4;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
@@ -12,13 +12,14 @@ let cardsEl = document.getElementById("cards-el");
 
 
 
-function startGame(){
+function startGame() {
     renderGame();
 }
 
 function renderGame(){
-    for (let i; i < cards.length; i++) {
-    cardsEl.textContent= "Cards: " +  cards[0] + " " + cards[1];
+    cardsEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i++) {
+     cardsEl.textContent += cards[i] + " ";
     }
     sumEl.textContent= "Sum: " +  sum;
     
@@ -40,12 +41,14 @@ if (sum <= 20) {
 }
 
 function newCard(){
-    let card = 2;
+    let card = getRandomCard();
     sum += card;
-    
     cards.push(card);
-
     renderGame();
     console.log("Drawing a New card from the deck....")
+}
+
+function getRandomCard() {
+    
 }
 
