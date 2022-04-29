@@ -1,7 +1,14 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
+    text-align: center;
 }
 h1{
     color:goldenrod;
+}
+
+button{
+    background-color: goldenrod;
+    color: white;
+    padding: 20px;
 }
