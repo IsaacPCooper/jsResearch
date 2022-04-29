@@ -8,4 +8,7 @@ let sum = firstCard + secondCard;
 // if condition
 if (sum < 21) {
     // Draw a card
+} else if (sum === 21){
+    // YOU WIN!
 }
+    // You lose!
