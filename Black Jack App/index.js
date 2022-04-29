@@ -4,3 +4,8 @@ let secondCard = 4;
 
 // Sum of both cards
 let sum = firstCard + secondCard;
+
+// if condition
+if (sum < 21) {
+    // Draw a card
+}
