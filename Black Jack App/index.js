@@ -17,7 +17,9 @@ function startGame(){
 }
 
 function renderGame(){
+    for (let i; i < cards.length; i++) {
     cardsEl.textContent= "Cards: " +  cards[0] + " " + cards[1];
+    }
     sumEl.textContent= "Sum: " +  sum;
     
 // if condition
@@ -39,8 +41,9 @@ if (sum <= 20) {
 
 function newCard(){
     let card = 2;
-
     sum += card;
+    
+    cards.push(card);
 
     renderGame();
     console.log("Drawing a New card from the deck....")
