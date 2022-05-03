@@ -11,7 +11,10 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let playerEl = document.getElementById("player-el")
+let startBtn = document.getElementById("start-btn");
+let drawBtn = document.getElementById("draw-btn");
 
+drawBtn.style.display = "none"
 playerEl.textContent = player.name + ": £" + player.chips;
 
 function getRandomCard() {
@@ -31,6 +34,8 @@ function startGame() {
         newCard()
     }
     sum = cards[0] + cards[1];
+    drawBtn.style.display = "inline-block"
+    startBtn.style.display = "none"
     renderGame();
 }
 
@@ -48,10 +53,12 @@ if (sum <= 20) {
  else if (sum === 21) {
      hasBlackJack = true;
      message = "You got a BlackJack!"
+     drawBtn.style.display = "none"
  } 
  else {
      message = "You're out!"
      isAlive = false;
+     drawBtn.style.display = "none"
  }
  messageEl.textContent = message;
 }
