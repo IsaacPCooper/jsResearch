@@ -11,7 +11,7 @@ let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 
 function getRandomCard() {
-    return Math.random();
+    return Math.floor(Math.random() * 6 ) + 1;
 }
 
 function startGame() {
