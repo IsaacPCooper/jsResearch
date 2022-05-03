@@ -1,10 +1,8 @@
 // Variables for two cards
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-let cards = [firstCard, secondCard]
-let sum = firstCard + secondCard;
+let cards = []
+let sum = 0;
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
@@ -15,13 +13,18 @@ function getRandomCard() {
     if (randomCard === 1){
         return 11;
     } 
-    else if(randomCard < 10 ){
+    else if(randomCard > 10 ){
         return 10;
     }
     return randomCard;
 }
 
 function startGame() {
+    isAlive = true;
+    for (let i = 0; i < 2; i++){
+        newCard()
+    }
+    sum = cards[0] + cards[1];
     renderGame();
 }
 
@@ -54,7 +57,6 @@ function newCard(){
     sum += card;
     cards.push(card);
     renderGame();
-    console.log("Drawing a New card from the deck....")
 }
 
 
