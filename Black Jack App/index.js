@@ -54,8 +54,6 @@ if (sum <= 20) {
      isAlive = false;
  }
  messageEl.textContent = message;
- console.log(message);
-
 }
 
 function newCard(){
