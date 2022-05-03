@@ -12,6 +12,12 @@ let cardsEl = document.getElementById("cards-el");
 
 function getRandomCard() {
     let randomCard = Math.floor(Math.random() * 13 ) + 1; // range between 1-13
+    if (randomCard === 1){
+        return 11;
+    } 
+    else if(randomCard < 10 ){
+        return 10;
+    }
     return randomCard;
 }
 
