@@ -4,5 +4,7 @@ const inputEl = document.getElementById("input-el");
 
 inputBtn.addEventListener("click", function() {
     console.log("addEventListener function")
+    myLeads.push("www.awesomelead.com")
+    console.log(myLeads)
 })
 
