@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input{
+    width: 100%;
+    border: 2px solid #5f9341;
+    box-sizing: border-box;
+    padding: 0.75rem;
+}
+
+button{
+    margin-top: 4px;
+    background-color: #5f9341;
+    padding: 1rem 1.5rem;
+    color:white;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 4px;
+}
