@@ -7,16 +7,21 @@ let myLeads = ["example1","example2", "example3"];
 // This also works, but is pointless code in this case: const inputValue = document.getElementById("input-el").value;
 
 inputBtn.addEventListener("click", function() {
+    if (inputEl.value !== "") {
     myLeads.push(inputEl.value)
-    console.log(myLeads)
+    inputEl.value = ""
     renderLeads();
+    }
+    else {
+        alert("Cannot save an empty input.")
+    }
 })
 
 function renderLeads() {
-let listItems = "";
-for (let i = 0; i < myLeads.length; i++){
-    listItems += "<li>" + myLeads[i] + "</li>";
-}
-ulEl.innerHTML = listItems;
+    let listItems = "";
+    for (let i = 0; i < myLeads.length; i++){
+        listItems += "<li>" + myLeads[i] + "</li>";
+    }
+    ulEl.innerHTML = listItems;
 }
 
