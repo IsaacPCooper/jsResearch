@@ -20,3 +20,17 @@ button{
     border: 0px;
     border-radius: 4px;
 }
+
+ul{
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+li a{
+    color: #5f9341;
+}
