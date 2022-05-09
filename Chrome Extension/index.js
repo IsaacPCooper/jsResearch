@@ -9,7 +9,11 @@ console.log(myLeads)
 
 myLeads.push("example2.com");
 
+console.log(myLeads)
 
+myLeads = JSON.stringify(myLeads)
+
+console.log(typeof myLeads)
 
 
 // This also works, but is pointless code in this case: const inputValue = document.getElementById("input-el").value;
