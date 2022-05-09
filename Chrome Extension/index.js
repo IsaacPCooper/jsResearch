@@ -2,6 +2,9 @@ const inputBtn = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
 let myLeads = [];
+let leadsFromLocalStorage = localStorage.getItem("myLeads")
+
+console.log(leadsFromLocalStorage);
 
 
 
@@ -13,8 +16,6 @@ inputBtn.addEventListener("click", function() {
     inputEl.value = ""
     localStorage.setItem("myLeads", JSON.stringify(myLeads) )
     renderLeads();
-
-    console.log(localStorage.getItem("myLeads") )
     }
     else {
         alert("Cannot save an empty input.")
