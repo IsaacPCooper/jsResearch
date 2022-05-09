@@ -1,12 +1,15 @@
 const inputBtn = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
-let myLeads = [];
+let myLeads = `["example.com"]`;
 
-localStorage.setItem("myLeads", "example")
-console.log( localStorage.getItem("myLeads"))
+myLeads = JSON.parse(myLeads);
 
-localStorage.clear;
+console.log(myLeads)
+
+myLeads.push("example2.com");
+
+
 
 
 // This also works, but is pointless code in this case: const inputValue = document.getElementById("input-el").value;
