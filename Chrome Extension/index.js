@@ -3,6 +3,11 @@ const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
 let myLeads = [];
 
+localStorage.setItem("myLeads", "example")
+console.log( localStorage.getItem("myLeads"))
+
+localStorage.clear;
+
 
 // This also works, but is pointless code in this case: const inputValue = document.getElementById("input-el").value;
 
