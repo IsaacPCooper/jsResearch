@@ -1,19 +1,8 @@
 const inputBtn = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
-let myLeads = `["example.com"]`;
+let myLeads = [];
 
-myLeads = JSON.parse(myLeads);
-
-console.log(myLeads)
-
-myLeads.push("example2.com");
-
-console.log(myLeads)
-
-myLeads = JSON.stringify(myLeads)
-
-console.log(typeof myLeads)
 
 
 // This also works, but is pointless code in this case: const inputValue = document.getElementById("input-el").value;
@@ -22,7 +11,10 @@ inputBtn.addEventListener("click", function() {
     if (inputEl.value !== "") {
     myLeads.push(inputEl.value)
     inputEl.value = ""
+    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
     renderLeads();
+
+    console.log(localStorage.getItem("myLeads") )
     }
     else {
         alert("Cannot save an empty input.")
