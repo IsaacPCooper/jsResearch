@@ -37,7 +37,7 @@ const veggieShelf = veggies.map(veggies => veggies.name);
 const fruits = foods.filter(foods => foods.type === 'fruit');
 const fruitShelf = fruits.map(fruits => fruits.name);
 
-console.log("This is the food shelf:" + foodShelf);
-console.log("This is the fruit shelf:" + fruitShelf);
-console.log("This is the veggie shelf:" + veggieShelf);
+console.log(foodShelf);
+console.log(fruitShelf);
+console.log(veggieShelf);
 
